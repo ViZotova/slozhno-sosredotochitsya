@@ -1,3 +1,4 @@
+
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
@@ -18,6 +19,7 @@
   display: grid;
   min-height: 668px;
   margin-bottom: 40px;
+  block-size: 100vh;
 }
 
 @media (min-width: 768px) {
@@ -54,7 +56,7 @@
   position: absolute;
   border-top: 1px solid var(--color-corner);
   border-right: 1px solid var(--color-corner);
-  display: block; 
+  display: block;
 }
 
 @media (min-width: 768px) {
@@ -123,7 +125,7 @@
 }
 
 .header__theme-menu-button {
-  font-size: 18px;
+  font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
   font-weight: 400;
   padding: 0px 13px;
   border: none;
@@ -162,6 +164,7 @@
     margin-left: -20px;
   }
 }
+
 @media (min-width: 1024px) {
   .header_title {
     padding-top: 10%;
@@ -229,7 +232,7 @@
 .section-title {
   font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   color: var(--button-text);
   font-family: var(--font-family);
   font-style: normal;
@@ -259,12 +262,12 @@
   padding-bottom: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 23.4px;
+  line-height: 23.4px; 
   color: var(--text-color);
 }
 
 .section-link {
-  text-shadow: 3px 3px 0px var(--accent-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
   font-family: var(--font-family);
   font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
   font-style: normal;
@@ -286,7 +289,7 @@
 .content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
-  padding-left: 10px;  
+  padding-left: 10px;
   padding-right: 10px;
 }
 
@@ -332,6 +335,16 @@
   }
 }
 
+.text-deckor {
+  color: var(--header-text-color);
+  background-color: var(--accent-color);
+  font-family: var(--font-family);
+  font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px;  
+}
+
 img {
   width: 100%;
   height: 100%;
@@ -371,30 +384,25 @@ img {
     "tape books ice-cream" 
     "tape street street";
   }
-
   .main__gallery-item:nth-child(n + 1) {
     grid-area: sunset;
   }
-
   .main__gallery-item:nth-child(n + 2) {
     grid-area: ice-cream;
   }
-
   .main__gallery-item:nth-child(n + 3) {
     grid-area: tape;
   }
-
   .main__gallery-item:nth-child(n + 4) {
     grid-area: books;
   }
-
   .main__gallery-item:nth-child(n + 5) {
     grid-area: street;
   }
 }
 
 @media (min-width: 1024px) {
-  .main__gallery{
+  .main__gallery {
     grid-template-rows: 268px 315px 428px;
   }
 }
