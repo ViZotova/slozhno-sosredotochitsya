@@ -3,7 +3,7 @@
   и их переопределение под различные устройства
 */
 :root {
-  --font-family: 'IBM Plex mono',monospace;
+  --font-family: 'IBM Plex mono', monospace;
   --accent-color: #ff0070;
   --title-color: #DB00FF;
   --background-color:#000028;
