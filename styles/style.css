@@ -77,7 +77,6 @@
   block-size: 9px;
 }
 
-
 .header__theme-menu {
   padding-block-start: 10px;
   justify-self: end;
@@ -223,14 +222,12 @@
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
-
 @media (1023px >= width >= 768px) {
   .section__why,
   .section__how {
     grid-template-columns: 1fr 2fr;
   }
 }
-
 
 @media (width >= 768px) {
   .header {
