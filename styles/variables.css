@@ -3,15 +3,22 @@
   и их переопределение под различные устройства
 */
 :root {
-  --font-family: 'IBM Plex mono', monospace;
-  --accent-color: #ff0070;
-  --title-color: #DB00FF;
-  --background-color:#000028;
-  --text-color: #FFC2E6;
-  --background-image: url(../images/cover-image-dark.png);
-  --header-text-color: #000028;
-  --decor:grid;
-  --hover-color: rgba(255, 0, 112, 0.40);
-  --color-corner: var(--accent-color);
-  --button-text: var(--accent-color);
+    --font-family: "IBM Plex Mono", monospace;
+    --accent-color: #FF0070;
+    --title-color: #DB00FF;
+    --background-color: #000028;
+    --text-color: #F1B2CE;
+    --background-image: url(../images/cover-image-dark.png);
+    --decor: visible;
+    --hover-color: rgba(255, 0, 112, 0.40);
+    --nav-decorate-color: #FF0070;
+    --accent-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --font-size: 18px;
+    --gap: 20px;
 }
+
+@media (width >= 768px) {
+  :root {
+    --accent-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+} 
