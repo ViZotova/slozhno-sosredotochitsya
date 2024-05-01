@@ -10,7 +10,7 @@
   background-image: var(--background-image);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: var(--background-color);
+  background-color: var(--background-color, #000028);
 }
 
 .header,
@@ -19,7 +19,6 @@
   block-size: 100vh;
   padding: 10px;
   min-height: 668px;
-  block-size: 100vh;
 }
 
 .header {
@@ -95,6 +94,7 @@
   font-family: var(--font-family); 
   margin-block-end: 10px;
   min-height: 26px;
+  text-transform: lowercase;
 }
 
 .header__theme-menu-button:hover {
@@ -137,7 +137,7 @@
 .header-text {
   font-size: var(--font-size);
   font-weight: 700;
-  line-height: 130%;
+  line-height: 150%;
 }
 
 .title-decor {
