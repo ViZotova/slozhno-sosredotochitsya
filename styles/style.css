@@ -132,12 +132,12 @@
   justify-self: end;
   align-self: center;
   inline-size: 100%;
+  margin-top: -3px;
 }
 
 .header-text {
   font-size: var(--font-size);
   font-weight: 700;
-  line-height: 150%;
 }
 
 .title-decor {
