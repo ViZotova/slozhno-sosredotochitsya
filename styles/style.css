@@ -1,9 +1,6 @@
-
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
   font-family: var(--font-family);
   background-size: cover;
   background-attachment: fixed;
@@ -76,6 +73,7 @@
   block-size: 9px;
 }
 
+
 .header__theme-menu {
   padding-block-start: 10px;
   justify-self: end;
@@ -132,12 +130,13 @@
   justify-self: end;
   align-self: center;
   inline-size: 100%;
-  margin-top: -3px;
 }
 
 .header-text {
   font-size: var(--font-size);
   font-weight: 700;
+  line-height: 130%;
+  width: 100%;
 }
 
 .title-decor {
@@ -222,12 +221,14 @@
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
+
 @media (1023px >= width >= 768px) {
   .section__why,
   .section__how {
     grid-template-columns: 1fr 2fr;
   }
 }
+
 
 @media (width >= 768px) {
   .header {
@@ -240,7 +241,7 @@
   }
 
   .header-title {
-    margin-inline-start: -20px;
+    margin-inline-start: -31px;
   }
 
   .subtitle {
